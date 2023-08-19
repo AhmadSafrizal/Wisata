@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>G-Wis</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="g-wis, travel" name="keywords">
+  <meta content="g-wis" name="description">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+  <!-- Fancy Box -->
+  <link rel="stylesheet" type="text/css" href="assets/fancyBox/source/jquery.fancybox.css" media="screen">
+  <script src="assets/fancyBox/lib/jquery-1.10.1.min.js" type="text/javascript"></script>
+  <script src="assets/fancyBox/source/jquery.fancybox.js" type="text/javascript"></script>
+
+  <!-- CSS -->
+  <link href="assets/style/style.css" rel="stylesheet">
+  
+</head>
+<body>
+  <!-- Header Start -->
+  <header>
+    <nav class="navbar navbar-expand-lg p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand h1 text-light" href="#"><span class="text-brown">G</span>Wis</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #fff;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#destinasi">Destinasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#galeri">Galeri</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search">
+            <button class="btn bg-brown" type="submit">Cari</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header End -->
+
+  <!-- Carousel Start -->
+  <div class="container-fluid p-0" style="z-index: 1;" id="beranda">
+    <div id="header-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="assets/image/main.jpg" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="title-carousel text-uppercase mb-md-3">Wisata Grobogan</h4>
+                        <h1 class="body-carousel display-3mb-md-4">Selamat datang di Wisata Grobogan</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Carousel End -->
+
+  <!-- Destination Start -->
+  <div class="container-fluid py-3" id="destinasi">
+    <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+            <h1>Destinasi Wisata</h1>
+        </div>
+        <div class="row">
+          <div class=" col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <img src="assets/image/waterfall1.jpg" class="card-img-top p-3" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Air Terjun Widuri</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, officiis!.</p>
+                <button type="button" class="btn bg-brown" data-bs-toggle="modal" data-bs-target="#modal1">
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-8" id="exampleModalLabel">Air Terjun Widuri</h1>
+                  </div>
+                  <div class="modal-image">
+                    <img src="assets/image/waterfall1.jpg" class="card-img-top p-3" alt="...">
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eius temporibus rerum repellat dolorem debitis omnis nemo cum! Blanditiis, iste laboriosam? Quidem facilis architecto dignissimos id repudiandae illo rerum at!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <img src="assets/image/waterfall2.jpg" class="card-img-top p-3" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Air Terjun Gulingan</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, officiis!.</p>
+                <button type="button" class="btn bg-brown" data-bs-toggle="modal" data-bs-target="#modal2">
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-8" id="exampleModalLabel">Air Terjun Gulingan</h1>
+                  </div>
+                  <div class="modal-image">
+                    <img src="assets/image/waterfall2.jpg" class="card-img-top p-3" alt="...">
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eius temporibus rerum repellat dolorem debitis omnis nemo cum! Blanditiis, iste laboriosam? Quidem facilis architecto dignissimos id repudiandae illo rerum at!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <img src="assets/image/rock.jpg" class="card-img-top p-3" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">White Canyon</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, officiis!.</p>
+                <button type="button" class="btn bg-brown" data-bs-toggle="modal" data-bs-target="#modal3">
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-8" id="exampleModalLabel">White Canyon</h1>
+                  </div>
+                  <div class="modal-image">
+                    <img src="assets/image/rock.jpg" class="card-img-top p-3" alt="...">
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eius temporibus rerum repellat dolorem debitis omnis nemo cum! Blanditiis, iste laboriosam? Quidem facilis architecto dignissimos id repudiandae illo rerum at!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <img src="assets/image/cave.jpg" class="card-img-top p-3" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Goa Maria</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, officiis!.</p>
+                <button type="button" class="btn bg-brown" data-bs-toggle="modal" data-bs-target="#modal4">
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-8" id="exampleModalLabel">Goa Maria</h1>
+                  </div>
+                  <div class="modal-image">
+                    <img src="assets/image/cave.jpg" class="card-img-top p-3" alt="...">
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eius temporibus rerum repellat dolorem debitis omnis nemo cum! Blanditiis, iste laboriosam? Quidem facilis architecto dignissimos id repudiandae illo rerum at!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <img src="assets/image/dam.jpg" class="card-img-top p-3" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bendungan Kedung Ombo</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, officiis!.</p>
+                <button type="button" class="btn bg-brown" data-bs-toggle="modal" data-bs-target="#modal5">
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-8" id="exampleModalLabel">Bendungan Kedung Ombo</h1>
+                  </div>
+                  <div class="modal-image">
+                    <img src="assets/image/dam.jpg" class="card-img-top p-3" alt="...">
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eius temporibus rerum repellat dolorem debitis omnis nemo cum! Blanditiis, iste laboriosam? Quidem facilis architecto dignissimos id repudiandae illo rerum at!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <img src="assets/image/forest.jpg" class="card-img-top p-3" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jati Pohon Indah</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, officiis!.</p>
+                <button type="button" class="btn bg-brown" data-bs-toggle="modal" data-bs-target="#modal6">
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-8" id="exampleModalLabel">Jati Pohon Indah</h1>
+                  </div>
+                  <div class="modal-image">
+                    <img src="assets/image/forest.jpg" class="card-img-top p-3" alt="...">
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eius temporibus rerum repellat dolorem debitis omnis nemo cum! Blanditiis, iste laboriosam? Quidem facilis architecto dignissimos id repudiandae illo rerum at!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- Destination End -->
+  
+  <!-- Galeri Start -->
+  <div class="container-fluid py-3" id="galeri">
+    <div class="container pt-5 pb-3">
+      <div class="text-center mb-3 pb-3">
+        <h1>Galeri</h1>
+      </div>
+      <div class="row justify-content-between text-center">
+        <div class=" col-lg-3 col-md-6 m-3">
+          <a href="assets/image/cave.jpg" class="zoom">
+            <img src="assets/image/cave.jpg" class="rounded" alt="...">
+          </a>
+        </div>
+        <div class=" col-lg-3 col-md-6 m-3">
+          <a href="assets/image/rock.jpg" class="zoom">
+            <img src="assets/image/rock.jpg" class="rounded" alt="...">
+          </a>
+        </div>
+        <div class=" col-lg-3 col-md-6 m-3">
+          <a href="assets/image/forest.jpg" class="zoom">
+            <img src="assets/image/forest.jpg" class="rounded" alt="...">
+          </a>
+        </div>
+        <div class=" col-lg-3 col-md-6 m-3">
+          <a href="assets/image/waterfall1.jpg" class="zoom">
+            <img src="assets/image/waterfall1.jpg" class="rounded" alt="...">
+          </a>
+        </div>
+        <div class=" col-lg-3 col-md-6 m-3">
+          <a href="assets/image/waterfall2.jpg" class="zoom">
+            <img src="assets/image/waterfall2.jpg" class="rounded" alt="...">
+          </a>
+        </div>
+        <div class=" col-lg-3 col-md-6 m-3">
+          <a href="assets/image/dam.jpg" class="zoom">
+            <img src="assets/image/dam.jpg" class="rounded" alt="...">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Galeri End -->
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="container-fluid text-white-50 py-5 px-sm-3 px-lg-5">
+      <div class="row pt-5">
+          <div class="col-lg-6 col-md-6 mb-5">
+              <a href="" class="navbar-brand">
+                  <h1 class="text-white"><span class="text-brown">G</span>Wis</h1>
+              </a>
+              <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+              <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+              <div class="d-flex justify-content-start">
+                  <a class="btn btn-brown btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-brown btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-brown btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a class="btn btn-brown btn-square" href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-5">
+              <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Hubungi Kami</h5>
+              <p><i class="fa fa-map-marker-alt mr-2 text-brown"></i>Grobogan, Indonesi</p>
+              <p><i class="fa fa-phone-alt mr-2 text-brown"></i>+6282 345 67890</p>
+              <p><i class="fa fa-envelope mr-2 text-brown"></i>gwis@mail.com</p>
+          </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<!-- Selector jquery -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".zoom").fancybox()
+  })
+</script>
+</html>
